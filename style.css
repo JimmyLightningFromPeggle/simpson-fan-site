@@ -1,0 +1,103 @@
+@font-face {
+	font-family: 'SimpsonsTitle';
+	src: url('fonts/mysimpsonsfont.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--color-yellow: #FDD835;
+	--color-blue: #246EB9;
+	--color-navy: #1C3144;
+	--color-black: #000000;
+
+	--font-heading: 'SimpsonsTitle', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	--font-body: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+	background-color: var(--color-yellow);
+	color: var(--color-navy);
+	margin: 0;
+    padding: 50px;
+}
+
+h1 {
+	text-align: center;
+	font-family: var(--font-heading); /* Consistent Typography */
+	color: var(--color-blue); /* Cohesive Color */
+	letter-spacing: 3px; /* Slightly increased spacing */
+	text-transform: uppercase;
+    margin-bottom: 20px; /* Consistent Spacing */
+    padding-bottom: 10px;
+    border-bottom: 5px solid var(--color-black); /* Unified Look/Feel */
+}
+
+h2 {
+    font-family: var(--font-heading); /* Consistent Typography */
+    color: var(--color-navy);
+    text-transform: uppercase;
+    border-left: 10px solid var(--color-blue); /* Unified Look/Feel */
+    padding-left: 15px;
+    margin-top: 40px; /* Consistent Spacing */
+    margin-bottom: 15px;
+}
+
+/* --- Consistent Typography (Body/Links) --- */
+p, a {
+	font-family: var(--font-body); /* Consistent Typography */
+	font-weight: bold;
+	line-height: 1.7; /* Increased for readability */
+}
+
+/* Link Styling (Unified Style) */
+a {
+    color: var(--color-blue);
+    text-decoration: none;
+    padding: 2px 4px;
+    border-bottom: 2px dashed var(--color-blue);
+}
+
+a:hover {
+    color: var(--color-yellow);
+    background-color: var(--color-blue);
+    border-bottom: 2px solid var(--color-yellow);
+}
+
+.accent-text {
+	font-weight: bold;
+	font-style: italic;
+	color: var(--color-blue); /* Added color for better accent */
+}
+
+/* --- Consistent Spacing and Image Styles --- */
+img {
+	border: 5px solid var(--color-black); /* Unified Look/Feel */
+	display: block;
+	margin: 25px auto; /* Centered images, Consistent Spacing */
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+}
+
+/* Layout/Section Styles for Consistent Spacing */
+main {
+    max-width: 900px;
+    margin: 0 auto; /* Center the main content */
+    padding: 20px;
+    background-color: white; /* Make the content area pop */
+    border: 5px solid var(--color-black);
+    box-shadow: 10px 10px 0 var(--color-black);
+}
+
+.episode-section {
+    margin-bottom: 40px; /* Consistent Spacing between sections */
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--color-navy);
+}
+
+/* Styling for the navigation links */
+.nav-link {
+    text-align: center;
+    margin-bottom: 30px;
+}
