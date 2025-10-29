@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'SimpsonsTitle';
-	src: url('fonts/mysimpsonsfont.otf') format('opentype');
+	src: url('mysimpsonsfont.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
